@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardio Training | EDGE FITNESS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="nav__links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about-us.html">ABOUT</a></li>
+          <li><a href="trainers.html">TRAINERS</a></li>
+          <li><a href="clients.html">CLIENTS</a></li>
+          <li><a href="blogs.html">BLOGS</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="section__container">
+    <h2 class="section__header">Cardio Training</h2>
+    <div class="cardio__content">
+      <img src="assets/session-2.jpg" alt=>
+      <p>
+        Our cardio training program is designed to help you strengthen your heart, improve endurance, and burn calories. Whether you're a beginner looking to get started with a simple routine, or an advanced athlete aiming for a high-intensity workout, we have options for every fitness level.
+      </p>
+      <p>
+        Cardio training includes activities like running, cycling, swimming, and interval training that are not only fun but also help reduce the risk of heart disease and improve lung capacity. With expert trainers to guide you through each step, you’ll find the perfect balance between intensity and rest.
+      </p>
+      <p>
+        Our state-of-the-art equipment and group classes are available throughout the week to keep your routine dynamic and exciting. You can also schedule one-on-one sessions for personalized guidance and feedback.
+      </p>
+      <p>
+        Join our community and take the first step towards a healthier heart and a more active lifestyle with EDGE FITNESS. Feel the difference with our specially designed cardio programs and see the transformation in your endurance and overall well-being.
+      </p>
+      <a href="contact.html" class="btn btn__primary">Get Started</a>
+    </div>
+  </section>
+  <div class="footer__bar">
+    ALL RIGHTS RESERVED © Copyright
+</div>
+</body>
+</html>
+
+
+
+<style>
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111; /* Dark background for a sleek look */
+  color: #eee; /* Light text for readability */
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header, .section__container {
+  padding: 2rem;
+}
+
+.section__header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff5722; /* Vibrant orange to match the feel of energy */
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-in-out; /* Animation */
+}
+
+/* Navigation Bar */
+.nav__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 1rem 2rem;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav__links a {
+  color: #eee;
+  transition: color 0.3s ease;
+  padding-left: 80px;
+}
+
+.nav__links a:hover {
+  color: #ff5722; /* Highlight effect */
+}
+
+.nav__logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Cardio Content Section */
+.cardio__content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #1b1b1b;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideUp 1s ease-out; /* Slide-in animation */
+}
+
+.cardio__content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.cardio__content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.btn__primary {
+  display: inline-block;
+  background: #ff5722;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn__primary:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+
+  .cardio__content {
+    padding: 1rem;
+  }
+
+  .section__header {
+    font-size: 2rem;
+  }
+}
+
+
+</style>

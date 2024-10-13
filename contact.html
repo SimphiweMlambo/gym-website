@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Signup | FitPhysique</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="nav__links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about-us.html">ABOUT</a></li>
+          <li><a href="trainers.html">TRAINERS</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </header><br><br><br>
+
+  <section class="login__container">
+    <div class="login__form">
+      <h2>Welcome Back to FitPhysique</h2>
+      <p>Log in or sign up to continue your fitness journey with us.</p>
+
+      <form action="#">
+        <input type="email" placeholder="Enter Email" required />
+        <input type="password" placeholder="Enter Password" required />
+        <button class="btn btn__primary" type="submit">LOGIN</button>
+        <div class="form__link">
+          <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+      </form>
+
+      <form action="#" class="signup__form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Enter Email" required />
+        <input type="password" placeholder="Create Password" required />
+        <button class="btn btn__primary" type="submit">SIGN UP</button>
+        <div class="form__link">
+          <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <!-- <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+        <p>
+          Welcome to FitPhysique, where we believe that every journey to fitness is unique and empowering.
+        </p>
+        <ul class="footer__links">
+          <li>
+            <a href="#"><span><i class="ri-map-pin-2-fill"></i></span>
+              130 Black Reef Rd<br />Dinwiddie, Germiston</a>
+          </li>
+          <li>
+            <a href="#"><span><i class="ri-phone-fill"></i></span>
+              +27 83 529 0603</a>
+          </li>
+          <li>
+            <a href="#"><span><i class="ri-mail-fill"></i></span>
+              fitphysique@gmail.co.za</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>GALLERY</h4>
+        <div class="gallery__grid">
+          <img src="assets/gallery-1.jpg" alt="gallery" />
+          <img src="assets/gallery-2.jpg" alt="gallery" />
+          <img src="assets/gallery-3.jpg" alt="gallery" />
+          <img src="assets/gallery-4.jpg" alt="gallery" />
+        </div>
+      </div>
+    </div> -->
+    <div class="footer__bar">
+      ALL RIGHTS RESERVED © Copyright
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+<style>
+ body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: #ff5722;
+}
+
+h2 {
+  color: #ff5722;
+  text-align: center;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Navbar */
+.nav__bar {
+  background-color: #222;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 7rem;
+  justify-content: center;
+  padding-left: 130px;
+}
+
+.nav__links a:hover {
+  color: #e64a19;
+}
+
+/* Login Form */
+.login__container {
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login__form {
+  background: #1b1b1b;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: slideUp 1s ease-out;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login__form h2 {
+  margin-bottom: 1rem;
+}
+
+.login__form p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login__form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: #2c2c2c;
+  color: #fff;
+}
+
+.login__form .btn__primary {
+  width: 100%;
+  background: #ff5722;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn__primary:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+.form__link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.form__link a {
+  color: #ff5722;
+}
+
+.form__link a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  padding: 2rem;
+  color: #ddd;
+}
+
+.footer__col {
+  margin-bottom: 2rem;
+}
+
+.footer__logo img {
+  height: 50px;
+}
+
+.footer__links {
+  list-style: none;
+}
+
+.footer__links a {
+  display: block;
+  color: #eee;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer__links a:hover {
+  color: #ff5722;
+}
+
+.footer__bar {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.gallery__grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav__links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .login__form {
+    width: 90%;
+  }
+}
+
+
+</style>

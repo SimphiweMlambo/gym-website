@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Training | EDGE FITNESS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+        </div>
+        <ul class="nav__links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about-us.html">ABOUT</a></li>
+          <li><a href="trainers.html">TRAINERS</a></li>
+          <li><a href="clients.html">CLIENTS</a></li>
+          <li><a href="blogs.html">BLOGS</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="section__container">
+    <h2 class="section__header">Fitness Training</h2>
+    <div class="fitness__content">
+      <img src="assets/session-3.jpg">
+      <p>
+        Our fitness training program is designed for those who want to build strength, increase flexibility, and improve their overall health. With a balanced approach to exercise, our programs focus on creating a routine that fits seamlessly into your lifestyle while ensuring you achieve lasting results.
+      </p>
+      <p>
+        From weight training to bodyweight exercises, our fitness training covers a wide range of activities that keep your workouts varied and engaging. We also emphasize the importance of proper form and technique to prevent injuries and maximize effectiveness.
+      </p>
+      <p>
+        Our modern facilities include everything you need, from free weights and resistance machines to dedicated spaces for stretching and recovery. Our experienced trainers are always on hand to provide guidance and adjust your routine as you progress.
+      </p>
+      <p>
+        Join the EDGE FITNESS community and start your journey towards a healthier, stronger, and more confident you. Whether you're a beginner or looking to take your fitness to the next level, we are here to help you succeed.
+      </p>
+      <a href="contact.html" class="btn btn__primary">Start Your Fitness Journey</a>
+    </div>
+  </section>
+  <div class="footer__bar">
+    ALL RIGHTS RESERVED © Copyright
+</div>
+</body>
+</html>
+
+
+
+
+<style>
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #111; /* Dark background for a sleek look */
+  color: #eee; /* Light text for readability */
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header, .section__container {
+  padding: 2rem;
+}
+
+.section__header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff5722; /* Vibrant orange for energetic appeal */
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-in-out; /* Animation */
+}
+
+/* Navigation Bar */
+.nav__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 1rem 2rem;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav__links a {
+  color: #eee;
+  transition: color 0.3s ease;
+  padding-left: 80px;
+}
+
+.nav__links a:hover {
+  color: #ff5722; /* Highlight effect */
+}
+
+.nav__logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Fitness Content Section */
+.fitness__content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #1b1b1b;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideUp 1s ease-out; /* Slide-in animation */
+}
+
+.fitness__content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.fitness__content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.btn__primary {
+  display: inline-block;
+  background: #ff5722;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn__primary:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+
+  .fitness__content {
+    padding: 1rem;
+  }
+
+  .section__header {
+    font-size: 2rem;
+  }
+}
+
+
+</style>
